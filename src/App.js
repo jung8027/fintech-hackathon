@@ -14,11 +14,6 @@ import ApiFour from './features/apifour/ApiFour';
 
 import './App.css';
 
-// const ApiOne = () => <div>Unit Info content </div>;
-// const Pilots = () => <div>Pilots content </div>;
-// const Mechs = () => <div>Mechs content </div>;
-// const UnitOrganization = () => <div>Unit Organization content </div>;
-
 
 class App extends Component {
 
@@ -38,7 +33,7 @@ class App extends Component {
         <Footer />
       </div>
 
-     
+
     );
   }
 }

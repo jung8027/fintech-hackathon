@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
-
+import {Router, Route, IndexRoute, Link, browserHistory} from 'react-router';
 import configureStore from './store/configureStore';
 const store = configureStore();
 
@@ -15,7 +15,12 @@ let render = () => {
 
   ReactDOM.render(
     <Provider store={store}>
-      <App />
+      <Router history={browserHistory}>
+        <IndexRoute component={App}/>
+        <Route path='welcome' component={App}/>
+        <Route path='schedule' component={App}/>
+        <Route path='confirm' component={App}/>
+      </Router>
     </Provider>,
     rootEl
   );

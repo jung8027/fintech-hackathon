@@ -126,7 +126,7 @@ const userObj ={
 			"account_ids": [
 				"act-4",
 				"act-5",
-				"act-6"
+				"`act-6`"
 			]
 		},
 		"AP003": {
